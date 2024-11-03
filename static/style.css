@@ -2,3 +2,51 @@
     text-align: center;
     color: rgb(49, 60, 177);
 }
+
+/* Navigation bar */
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 70px;
+    background: #999fea;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #29302f;
+}
+
+.navbar a:hover {
+    color: #397e73;
+}
+
+    /* Adding underline to navbar items */
+    .navbar a::after { /* After pseudo-element: inserts content after the content of the specified element*/
+        content: "";
+        display: block;
+        height: 3px;
+        background: #397e73;
+        width: 0%;
+        transition: all ease-in-out 300ms;
+    }
+
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+.nav-items {
+    display: flex;
+}
