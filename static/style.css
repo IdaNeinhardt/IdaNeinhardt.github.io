@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     height: 70px;
-    background: #8f8f8f;
+    background: #6e6e6ecb;
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -107,6 +107,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
+    text-align: center;
 }
 
 .content_block{
