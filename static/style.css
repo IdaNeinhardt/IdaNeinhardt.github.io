@@ -99,3 +99,20 @@
         right: 0;
     }
 }
+¨
+/* Page content blocks */
+
+.page_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.content_block{
+    padding: 10px;
+    background-color: #afafaf84;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
