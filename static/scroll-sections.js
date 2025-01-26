@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".cv-section");
+    const sections = document.querySelectorAll(".cv-section, .cv-entry");
 
     function revealSections() {
         sections.forEach(section => {
