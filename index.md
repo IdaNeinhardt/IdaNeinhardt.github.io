@@ -1,1 +1,18 @@
-<meta http-equiv="refresh" content="0;url=https://idaneinhardt.github.io/pages/home.html">
+<!--<meta http-equiv="refresh" content="0;url=https://idaneinhardt.github.io/pages/home.html">-->
+
+
+---
+layout: default
+title: Home
+---
+
+<div class="content-block">
+    <h1>Hello World!</h1>
+    <h1>I'm Ida</h1>
+</div>
+
+<div class="content-block">
+    <p>Learn more <a href="about.html">about me</a></p>
+    <img src="{{ url_for('static', filename='images/idaAndDavid.jpg') }}" alt="Sample profile picture" class="profile-picture" style="transform:rotate(-90deg);">
+</div>
+
