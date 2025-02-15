@@ -1,2 +1,5 @@
+# cd \Users\idane\OneDrive\Python-learning\Projects\Website
+# cmd /c 'set FLASK_DEBUG=True && python app.py'
+
 cd \Users\idane\OneDrive\Python-learning\Projects\Website
-cmd /c 'set FLASK_DEBUG=True && python app.py'
+bundle exec jekyll serve
