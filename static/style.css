@@ -135,7 +135,7 @@ h1 {
     width: 200px;
     height: auto;
     margin-left: 40px;
-    border-radius: 25p;
+    border-radius: 25px;
 }
 
 /* CV */
@@ -234,3 +234,40 @@ h1 {
     font-style: italic;
     padding-bottom: 5px;
 }
+
+/* Image + text box overlapping */
+.two-boxes {
+    display: flex;
+    margin: auto;
+    max-width: 900px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+    .box-one {
+        flex: 1;
+        background: #6f8b9e;
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 12px;
+        margin-left: 10%;
+        z-index: 2;
+    }
+
+    .box-two {
+        flex: 1.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .box-two img {
+        width: 300px;
+        height: auto;
+        margin-left: -40%;
+        border-radius: 25px;
+    }
+
+    
