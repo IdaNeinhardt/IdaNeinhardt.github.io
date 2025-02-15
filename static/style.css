@@ -5,6 +5,10 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+h1 {
+    font-size: 90px;
+}
+
 .text-centre {
     text-align: center;
     color: #000000;
