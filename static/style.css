@@ -17,6 +17,7 @@
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar li {
@@ -78,7 +79,7 @@
         width: 150px;
         flex-direction: column;
         justify-content: space-evenly;
-        background: #808080;
+        background: #a5a5a5;
         padding: 2rem;
         transition: all ease-in-out 1000ms;
     }
@@ -111,7 +112,7 @@
 
 .content-block {
     padding: 10px;
-    background-color: #afafaf84;
+    background-color: #6f8b9e84;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
