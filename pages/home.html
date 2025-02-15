@@ -1,6 +1,7 @@
-{% extends "layout.html" %}
-
-{% block page_content %}
+---
+layout: default
+title: Home
+---
 
 <div class="content-block">
     <h1>Hello World!</h1>
@@ -11,7 +12,3 @@
     <p>Learn more <a href="about.html">about me</a></p>
     <img src="{{ url_for('static', filename='images/idaAndDavid.jpg') }}" alt="Sample profile picture" class="profile-picture" style="transform:rotate(-90deg);">
 </div>
-
-
-
-{% endblock %}
