@@ -1,3 +1,9 @@
+/* Universal CSS */
+
+body {
+    background-color: #6f8b9e84;
+}
+
 .text-centre {
     text-align: center;
     color: #000000;
@@ -10,7 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     height: 70px;
-    background: #6e6e6ecb;
+    background: #6f8b9ecc;
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
@@ -31,7 +37,7 @@
 }
 
 .navbar a:hover {
-    color: #397e73;
+    color: #2b404e;
 }
 
     /* Adding underline to navbar items */
@@ -39,7 +45,7 @@
         content: "";
         display: block;
         height: 3px;
-        background: #397e73;
+        background: #2b404e;
         width: 0%;
         transition: all ease-in-out 300ms;
     }
@@ -58,7 +64,7 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: #000000;
+    color: #2b404e;
     cursor: pointer;
     margin-top: 100px;
     margin-left: auto;
@@ -79,7 +85,7 @@
         width: 150px;
         flex-direction: column;
         justify-content: space-evenly;
-        background: #a5a5a5;
+        background: #6f8b9ecc;
         padding: 2rem;
         transition: all ease-in-out 1000ms;
     }
@@ -131,7 +137,7 @@
 .cv-section {
     position: relative;
     z-index: 1;
-    background: #488c918f;
+    background: #6f8b9e84;
     margin: 30px auto;
     padding: 20px;
     width: 80%;
@@ -153,7 +159,7 @@
 .cv-entry {
     position: relative;
     z-index: 1;
-    background: #488c9180;
+    background: #6f8b9e;
     padding: 15px;
     margin: 15px 0;
     border-radius: 8px;
