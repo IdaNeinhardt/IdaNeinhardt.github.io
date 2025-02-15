@@ -6,5 +6,6 @@
 layout: default
 title: Home
 ---
-<h1>Welcome</h1>
-<p>This is my homepage.</p>
+
+# Welcome to My Website
+This is the homepage.
