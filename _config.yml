@@ -1,4 +1,14 @@
+title: Ida's webpage
+email: ida.neinhardt@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my webpage.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  IdaNeinhardt
+
+# Build settings
 theme: minima
 include:
   - static
-
+plugins:
+  - jekyll-feed
