@@ -7,6 +7,7 @@ body {
 
 h1 {
     font-size: 90px;
+    color: #18232b;
 }
 
 .text-centre {
@@ -162,12 +163,28 @@ ul li i {
 }
 
 /* Pictures */
-.profile-picture {
-    width: 200px;
-    height: auto;
-    margin-left: 40px;
-    border-radius: 25px;
+
+.start-image {
+    width: 100%;
+    height: auto; /* Keeps aspect ratio */
+    display: block;    
+    border-radius: 8px;
+    opacity: 0.5;
 }
+
+    .text-on-image {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    #type_text {
+        font-family: monospace;
+        font-size: 20px;
+        white-space: pre-wrap;
+    }
 
 /* CV */
 .cv-section {
