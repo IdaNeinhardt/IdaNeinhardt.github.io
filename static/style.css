@@ -82,6 +82,10 @@ h1 {
     align-items: flex-start;
 }
 
+ul li i {
+    margin-right: 8px; /* Adds space between the icon and the text */
+}
+
 /* Button to toggle navigation on small screens */
 .toggle-btn {
     display: none;
