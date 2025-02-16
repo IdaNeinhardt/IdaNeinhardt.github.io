@@ -31,22 +31,22 @@ h1 {
     z-index: 1000;
 }
 
-.navbar li {
+.navbar li, .footer li {
     list-style: none;
     margin: 0 0.5rem;
 }
 
-.navbar a {
+.navbar a, .footer a {
     text-decoration: none;
     color: #000000;
 }
 
-.navbar a:hover {
+.navbar a:hover, .footer a:hover {
     color: #2b404e;
 }
 
     /* Adding underline to navbar items */
-    .navbar a::after { /* After pseudo-element: inserts content after the content of the specified element*/
+    .navbar a::after, .footer a::after { /* After pseudo-element: inserts content after the content of the specified element*/
         content: "";
         display: block;
         height: 3px;
@@ -55,12 +55,31 @@ h1 {
         transition: all ease-in-out 300ms;
     }
 
-    .navbar a:hover::after {
+    .navbar a:hover::after, .footer a:hover::after {
         width: 100%;
     }
 
 .nav-items {
     display: flex;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 150px;
+    background: #6f8b9ecc;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: baseline;
+    top: 0;
+    z-index: 1000;
+}
+
+.foot-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Button to toggle navigation on small screens */

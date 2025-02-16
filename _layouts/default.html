@@ -11,12 +11,17 @@
 
     <!-- Favicon -->
     <link href="/static/images/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/5bf6e18a98.js" crossorigin="anonymous"></script>
 </head>
 <body>
     {% include menu.html %}
     <div class="content">
         {{ content }}
     </div>
+    {% include footer.html %}
+
     <!-- Linking JavaScript files -->
     <script src="/static/toggle-btn.js"></script>
     <script src="/static/scroll-sections.js"></script>
