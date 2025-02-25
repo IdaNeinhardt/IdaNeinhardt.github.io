@@ -3,6 +3,27 @@ layout: default
 title: Projects
 ---
 
-<div>
+<div class="content-block">
     <p class="text-centre">My Projects</p>
 </div>
+
+
+<button onclick="executePython()" style="padding: 10px 20px; font-size: 18px; cursor: pointer;">Run Python</button>
+
+<div id="output-container" style="margin-top: 20px; padding: 15px; border: 2px solid #333; background: #f4f4f4; font-size: 20px; font-family: monospace; display: none;">
+    <strong>Output:</strong>
+    <pre id="output" style="white-space: pre-wrap; margin-top: 10px;"></pre>
+</div>
+
+<script>
+    async function executePython() {
+        let code = `print("Hello World")`;
+        let result = await runPython(code);
+
+        let outputContainer = document.getElementById("output-container");
+        let outputElement = document.getElementById("output");
+
+        outputElement.textContent = result;
+        outputContainer.style.display = "block"; // Show the output box
+    }
+</script>
