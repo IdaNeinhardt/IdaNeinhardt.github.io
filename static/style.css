@@ -165,6 +165,15 @@ ul li i {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     text-align: center;
+}
+
+.home-block {
+    padding: 10px;
+    background-color: #6f8b9e84;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    text-align: center;
     position: relative; /* Makes this the reference for absolutely positioned children */
     display: inline-block; /* Prevents unexpected layout shifts */
 }
