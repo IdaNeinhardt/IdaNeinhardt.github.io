@@ -6,7 +6,12 @@ body {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: clamp(32px, 5vw, 90px);
+    /*  
+    32px → Minimum font size (for very small screens)
+    5vw → Dynamic scaling based on viewport width
+    52px → Maximum font size (for large screens)
+    */
     color: #18232b;
 }
 
@@ -143,7 +148,7 @@ ul li i {
         right: 0;
     }
 }
-¨
+
 /* Page content blocks */
 .page-content {
     display: flex;
@@ -160,6 +165,8 @@ ul li i {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     text-align: center;
+    position: relative; /* Makes this the reference for absolutely positioned children */
+    display: inline-block; /* Prevents unexpected layout shifts */
 }
 
 /* Pictures */
@@ -178,12 +185,6 @@ ul li i {
         left: 50%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
-    }
-
-    #type_text {
-        font-family: monospace;
-        font-size: 20px;
-        white-space: pre-wrap;
     }
 
 /* CV */
