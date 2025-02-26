@@ -196,6 +196,14 @@ ul li i {
         white-space: nowrap;
     }
 
+.logo-image {
+    width: auto;
+    height: 40px;
+    border-radius: 8px;
+    float: left;
+    margin-right: 10px;
+}
+
 /* CV */
 .cv-section {
     position: relative;
@@ -245,11 +253,14 @@ ul li i {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap; /* Prevent wrapping if space allows */
 }
 
     /* Left and right alignment */
     .cv-left {
         text-align: left;
+        flex: 1;
     }
 
     .cv-right {
