@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Adding Pyodide -->
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
-
     <!-- Favicon -->
     <link href="/static/images/favicon.ico" rel="icon" type="image/x-icon">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="css/all.min.css" onerror="this.onerror=null;this.href='css/all.min.css'";>
+    <link rel="stylesheet" href="/css/all.min.css" onerror="this.onerror=null;this.href='/css/all.min.css'";>
 </head>
 <body>
     {% include menu.html %}
     <div class="content">
         {{ content }}
+
     </div>
     {% include footer.html %}
 
@@ -32,21 +30,5 @@
     <script src="/static/tooltip-overlap.js"></script>
     <script src="/static/appear-text.js"></script>
 
-    <!-- Pyodide Setup -->
-    <script>
-        async function loadPyodideAndRun() {
-            window.pyodide = await loadPyodide();
-        }
-        loadPyodideAndRun();
-        
-        async function runPython(code) {
-            if (window.pyodide) {
-                let result = await window.pyodide.runPythonAsync(code);
-                return result;
-            } else {
-                console.error("Pyodide is not loaded yet.");
-            }
-        }
-    </script>
 </body>
 </html>
