@@ -198,8 +198,8 @@ ul li i {
 
 .logo-image {
     width: auto;
-    height: 40px;
-    border-radius: 8px;
+    height: 50px;
+    border-radius: 4px;
     float: left;
     margin-right: 10px;
 }
@@ -308,7 +308,7 @@ ul li i {
 .two-boxes {
     display: flex;
     margin: auto;
-    max-width: 900px;
+    max-width: 1800px;
     overflow: hidden;
     padding-top: 20px;
 }
@@ -325,7 +325,7 @@ ul li i {
     }
 
     .box-two {
-        flex: 1.8;
+        flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -333,10 +333,32 @@ ul li i {
     }
 
     .box-two img {
-        width: 300px;
+        width: 500px;
         height: auto;
         margin-left: -40%;
         border-radius: 25px;
     }
 
-    
+/* Gallery of images */
+.gallery {
+    margin: 5px;
+    border: 1px solid #6f8b9e;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;  /* Prevents extra space */
+    background-color: #dad7d7;
+    height: 490px;
+  }
+  
+  .gallery:hover {
+    border: 1px solid #18232b;
+  }
+  
+  .gallery img {
+    width: auto;
+    display: block;  /* Remove unwanted spacing */
+  }
+  
+  .gallery-desc {
+    padding: 10px;
+  }
