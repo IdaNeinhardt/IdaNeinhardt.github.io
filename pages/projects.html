@@ -4,26 +4,23 @@ title: Projects
 ---
 
 <div class="content-block">
-    <p class="text-centre">My Projects</p>
+    <h1>My Projects</h1>
 </div>
 
-
-<button onclick="executePython()" style="padding: 10px 20px; font-size: 18px; cursor: pointer;">Run Python</button>
-
-<div id="output-container" style="margin-top: 20px; padding: 15px; border: 2px solid #333; background: #f4f4f4; font-size: 20px; font-family: monospace; display: none;">
-    <strong>Output:</strong>
-    <pre id="output" style="white-space: pre-wrap; margin-top: 10px;"></pre>
+<div class="two-boxes">
+  <div class="box-one">
+      <h2>iGEM</h2>
+      <p>2024 I competed in the international synthetic biology competition iGEM. Every year, over 400 teams from all over the world gather to take part in the competition
+        where the goal is to come up with a solution to a local problem using synthetic biology. My team decided to create a novel pesticide that targets an essential
+        developmental gene in the Asian hornet, an invasive species of hornet
+        that hunts local insects and damage fruit crops. To ensure specificity of the pesticide, we created a box in which we aimed to place the bait. The box was 
+        outfitted with motion detector sensors and cameras that with an image recognition software only were to open the doors to the bait if an Asian hornet was observed...</p>
+      <a href="projects/iGEM.html">Read more here</a>
+      <p></p>
+  </div>
+  
+  <div class="box-two" >
+      <img src="/static/images/LogoiGEM.png" alt="iGEM logo" style="background-color: #fff9ea;">
+  </div>
+  
 </div>
-
-<script>
-    async function executePython() {
-        let code = `print("Hello World")`;
-        let result = await runPython(code);
-
-        let outputContainer = document.getElementById("output-container");
-        let outputElement = document.getElementById("output");
-
-        outputElement.textContent = result;
-        outputContainer.style.display = "block"; // Show the output box
-    }
-</script>
