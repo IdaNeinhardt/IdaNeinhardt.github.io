@@ -110,7 +110,7 @@ h1 {
     margin-top: 20px;
     box-sizing: border-box;
     background: #6f8b9ecc;
-    padding: 0 20%;
+    padding: 0 10%;
     display: flex;
     align-items: flex-start;
     flex-direction: column; /* Stack rows vertically */
