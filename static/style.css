@@ -335,8 +335,9 @@ ul li i {
     .box-two img {
         width: 500px;
         height: auto;
-        margin-left: -40%;
-        border-radius: 25px;
+        margin-left: -35%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
 /* Gallery of images */
