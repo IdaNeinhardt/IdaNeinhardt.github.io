@@ -399,3 +399,18 @@ ul li i {
   .gallery-desc {
     padding-top: 10px;
   }
+
+.pdf {
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    aspect-ratio: 4 / 3;
+    
+}
+
+.pdf,
+html,
+body {
+    height: 100%;
+    padding: 0;
+}
