@@ -8,7 +8,7 @@ google.charts.load('current', {
           ['Country', 'Years', { role: 'tooltip' }],
           ['Sweden', 1, "2001-2018, 2019-2023"],
           ['France', 1, "2018-2019"],
-          ['Switzerland', 1, "2023"]
+          ['Switzerland', 1, "2023-"]
         ]);
 
         var options = {
