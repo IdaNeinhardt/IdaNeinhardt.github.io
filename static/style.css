@@ -418,3 +418,8 @@ body {
 #regions_div:hover {
     cursor: pointer;
   }
+
+#Sweden, #France, #Switzerland {
+    margin-top: 2%;
+    scroll-margin-top: 75px;
+}
