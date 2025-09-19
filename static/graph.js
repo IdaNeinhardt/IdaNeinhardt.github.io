@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Machine Learning", "Data Analysis", "Microscopy", "PCR", "ELISA",
     "Flow Cytometry", "Protein Purification", "Public Speaking",
     "Project Management", "Team Leadership", "Communication", "Quality Control",
-    "Team Work", "PyTorch", "TensorFlow", "Conservation", "GMP", "Attention To Detail",
+    "Teamwork", "PyTorch", "TensorFlow", "Conservation", "GMP", "Attention To Detail",
     "Science Communication", "Logistic Regression", "Critical Thinking",
     "Oncology", "Immunology", "Autoencoders", "Protein Structure", "Molecular Dynamics",
     "Steered Molecular Dynamics", "Single-Cell Analysis", "Neurology"
