@@ -210,4 +210,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.body.style.cursor = 'default';
   });
+
+  // Highlight pointers when pressing node
+  cy.on('mousedown', 'node', evt => {
+    evt.target.connectedEdges().style({
+      'line-color': '#000000ff',
+      'target-arrow-color': '#000000ff',
+      'width': 4
+    })
+  });
+
+  // Reset edge style when releasing the mouse
+  cy.on('mouseup', 'node', evt => {
+    const node = evt.target;
+    node.connectedEdges().style({
+      'line-color': '#999',
+      'target-arrow-color': '#999',
+      'width': 2
+    });
+  });
 });
