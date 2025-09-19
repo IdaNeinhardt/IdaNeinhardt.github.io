@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: "iGEM",
       label: "iGEM",
-      skills: ["Python", "HTML", "CSS", "JavaScript", "Team Work", "PyTorch", "TensorFlow", "Conservation", "Project Management", "Git"],
+      skills: ["Python", "HTML", "CSS", "JavaScript", "Teamwork", "PyTorch", "TensorFlow", "Conservation", "Project Management", "Git"],
       url: "https://2024.igem.wiki/unilausanne/"
 
     },
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: "Synapse",
       label: "Vice-Chairperson (Synapse - Life Science Connect Sweden)",
-      skills: ["Public Speaking", "Team Leadership", "Communication", "Project Management", "Team Work"]
+      skills: ["Public Speaking", "Team Leadership", "Communication", "Project Management", "Teamwork"]
     },
     {
       id: "MSc",
