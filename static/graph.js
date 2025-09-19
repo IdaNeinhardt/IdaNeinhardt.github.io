@@ -24,32 +24,38 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: "Skånemejerier",
       label: "Quality Engineer Intern (Skånemejerier)",
-      skills: ["Quality Control", "Communication", "GMP", "Attention To Detail"]
+      skills: ["Quality Control", "Communication", "GMP", "Attention To Detail"],
+      url: "https://www.skanemejerier.se/"
     },
     {
       id: "Polypeptide",
       label: "Process Technician (Polypeptide)",
-      skills: ["Protein Purification", "GMP"]
+      skills: ["Protein Purification", "GMP"],
+      url: "https://www.polypeptide.com/"
     },
     {
       id: "Synapse",
       label: "Vice-Chairperson (Synapse - Life Science Connect Sweden)",
-      skills: ["Public Speaking", "Team Leadership", "Communication", "Project Management", "Teamwork"]
+      skills: ["Public Speaking", "Team Leadership", "Communication", "Project Management", "Teamwork"],
+      url: "https://www.synapse-connect.org/"
     },
     {
       id: "MSc",
       label: "MSc Bioinformatics (UNIL)",
-      skills: ["Machine Learning", "Python", "R", "Data Analysis", "Science Communication"]
+      skills: ["Machine Learning", "Python", "R", "Data Analysis", "Science Communication"],
+      url: "https://www.unil.ch/fbm/en/home/menuinst/formation/biologie/masters/mls.html"
     },
     {
       id: "BSc",
       label: "BSc Biomedicine (Lund University)",
-      skills: ["PCR", "ELISA", "Microscopy", "Flow Cytometry"]
+      skills: ["PCR", "ELISA", "Microscopy", "Flow Cytometry"],
+      url: "https://www.lunduniversity.lu.se/lubas/i-uoh-lu-MGBIM"
     },
     {
       id: "Website",
       label: "Personal Website Project",
-      skills: ["HTML", "CSS", "JavaScript", "Git"]
+      skills: ["HTML", "CSS", "JavaScript", "Git"],
+      url: "https://idaneinhardt.github.io/pages/home.html"
     },
     {
       id: "MScThesis",
@@ -59,12 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       id: "FSP",
       label: "First Step Project",
-      skills: ["Machine Learning", "Python", "Data Analysis", "Autoencoders", "Project Management", "Protein Structure", "Molecular Dynamics", "Steered Molecular Dynamics"]
+      skills: ["Machine Learning", "Python", "Data Analysis", "Autoencoders", "Project Management", "Protein Structure", "Molecular Dynamics", "Steered Molecular Dynamics"],
+      url: "https://idaneinhardt.github.io/pages/projects/FSP.html"
     },
     {
       id: "BScThesis",
       label: "BSc Thesis",
-      skills: ["Single-Cell Analysis", "R", "Data Analysis", "Oncology", "Neurology", "Science Communication"]
+      skills: ["Single-Cell Analysis", "R", "Data Analysis", "Oncology", "Neurology", "Science Communication"],
+      url: "https://idaneinhardt.github.io/pages/projects/BScThesis.html"
     }
   ];
 
