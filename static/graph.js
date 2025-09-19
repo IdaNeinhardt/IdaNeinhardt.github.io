@@ -196,7 +196,9 @@ document.addEventListener('DOMContentLoaded', () => {
   cy.on('mouseover', 'node[type="experience"][clickable = "true"]', evt => {
     evt.target.style({
       'border-width': 6,
-      'background-color': '#8fb29f'
+      'background-color': '#8fb29f',
+      'font-weight': 'bold',
+      'font-size': 13
     });
     document.body.style.cursor = 'pointer'; // change cursor globally
   });
@@ -205,8 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
     evt.target.style({
       'border-width': 4,
       'background-color': '#7da49a',
-      'font-weight': 'bold',
-      'font-size': 13
+      'font-weight': 'normal',
+      'font-size': 11
     });
     document.body.style.cursor = 'default';
   });
