@@ -521,14 +521,20 @@ body {
   border: 2px solid #333;
 }
 
-.legend-shape.skill {
-  background-color: #b3dbd1;
-  border-color: #7da49a;
+.legend-shape.hardSkill {
+  background-color: #AEC3B0;
+  border-color: #9fafa1;
+  border-radius: 50%; /* circle */
+}
+
+.legend-shape.softSkill {
+  background-color: #EFF6E0;
+  border-color: #9fafa1;
   border-radius: 50%; /* circle */
 }
 
 .legend-shape.experience {
-  background-color: #7da49a;
-  border-color: #b3dbd1;
+  background-color: #a4c2d1;
+  border-color:  #56717e;
   border-radius: 4px; /* rounded rectangle */
 }

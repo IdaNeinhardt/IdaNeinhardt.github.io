@@ -1,16 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
   // --- Skills ---
-    const skills = [
+  const softSkills = [
+    "Public Speaking", "Project Management", "Team Leadership", "Communication", 
+    "Teamwork", "Attention To Detail", "Science Communication", "Critical Thinking"
+  ];
+
+  const hardSkills = [
     "Python", "R", "HTML", "CSS", "JavaScript", "Git", 
     "Machine Learning", "Data Analysis", "Microscopy", "PCR", "ELISA",
-    "Flow Cytometry", "Protein Purification", "Public Speaking",
-    "Project Management", "Team Leadership", "Communication", "Quality Control",
-    "Teamwork", "PyTorch", "TensorFlow", "Conservation", "GMP", "Attention To Detail",
-    "Science Communication", "Logistic Regression", "Critical Thinking",
-    "Oncology", "Immunology", "Autoencoders", "Protein Structure", "Molecular Dynamics",
-    "Steered Molecular Dynamics", "Single-Cell Analysis", "Neurology"
-    ];
+    "Flow Cytometry", "Protein Purification", "Quality Control",
+    "PyTorch", "TensorFlow", "Conservation", "GMP",
+    "Logistic Regression", "Oncology", "Immunology", "Autoencoders", 
+    "Protein Structure", "Molecular Dynamics", "Steered Molecular Dynamics", 
+    "Single-Cell Analysis", "Neurology"
+  ];
 
+  const skills = [...softSkills, ...hardSkills];
 
   // --- Experiences  ---
   const experiences = [
@@ -82,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add skill nodes
   skills.forEach(skill => {
     elements.push({
-      data: { id: `skill-${skill}`, label: skill, type: "skill" }
+      data: { id: `skill-${skill}`, label: skill, type: "skill", category: softSkills.includes(skill) ? "soft" : "hard"}
     });
   });
 
@@ -124,10 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       },
       {
-        selector: 'node[type="skill"]',
+        selector: 'node[type="skill"][category = "soft"]',
         style: {
-          'background-color': '#b3dbd1',
-          'border-color': '#7da49a',
+          'background-color': '#EFF6E0',
+          'border-color': '#9fafa1',
+          'shape': 'ellipse',
+          'width': 80,
+          'height': 80,
+          'text-wrap': 'wrap',
+          'text-max-width': 60,
+          'font-size': 11
+        }
+      },
+      {
+        selector: 'node[type="skill"][category = "hard"]',
+        style: {
+          'background-color': '#AEC3B0',
+          'border-color': '#9fafa1',
           'shape': 'ellipse',
           'width': 80,
           'height': 80,
@@ -139,8 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         selector: 'node[type="experience"]',
         style: {
-          'background-color': '#7da49a',
-          'border-color': '#b3dbd1',
+          'background-color': '#a4c2d1',
+          'border-color': '#56717e',
           'shape': 'round-rectangle',
           'width': 140,
           'height': 60,
@@ -178,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'cose',
       animate: true,
       animationDuration: 800,
-      idealEdgeLength: 150,
+      idealEdgeLength: 50,
       nodeRepulsion: 3000
     }).run();
   });
@@ -196,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cy.on('mouseover', 'node[type="experience"][clickable = "true"]', evt => {
     evt.target.style({
       'border-width': 6,
-      'background-color': '#8fb29f',
+      //'background-color': '#8fb29f',
       'font-weight': 'bold',
       'font-size': 13
     });
@@ -206,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cy.on('mouseout', 'node[type="experience"][clickable = "true"]', evt => {
     evt.target.style({
       'border-width': 4,
-      'background-color': '#7da49a',
+      //'background-color': '#7da49a',
       'font-weight': 'normal',
       'font-size': 11
     });
